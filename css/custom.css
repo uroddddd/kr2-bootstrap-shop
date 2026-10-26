@@ -1,0 +1,19 @@
+/* Минимальные правки поверх Bootstrap. Сетка и компоненты — Bootstrap. */
+:root { --shop-ink: #183d35; --shop-surface: #f1eee6; }
+body { color: #23342e; }
+.hero-surface { background-color: var(--shop-surface); }
+.eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
+.btn-primary { --bs-btn-bg: var(--shop-ink); --bs-btn-border-color: var(--shop-ink); --bs-btn-hover-bg: #102a25; --bs-btn-hover-border-color: #102a25; --bs-btn-active-bg: #102a25; --bs-btn-active-border-color: #102a25; }
+.btn-outline-primary { --bs-btn-color: var(--shop-ink); --bs-btn-border-color: var(--shop-ink); --bs-btn-hover-bg: var(--shop-ink); --bs-btn-hover-border-color: var(--shop-ink); --bs-btn-active-bg: var(--shop-ink); --bs-btn-active-border-color: var(--shop-ink); }
+.text-primary { color: var(--shop-ink) !important; }
+.bg-primary, .text-bg-primary { background-color: var(--shop-ink) !important; }
+.navbar-nav .nav-link.active { color: var(--shop-ink); font-weight: 700; text-decoration: underline; text-underline-offset: .4em; }
+.card-img-top { height: 280px; object-fit: contain; background: #f0f1ee; }
+.hero-image { height: 390px; object-fit: contain; background: #e5e4df; }
+.card { --bs-card-border-radius: .8rem; }
+.accordion { --bs-accordion-active-bg: #eef4f0; --bs-accordion-active-color: #183d35; }
+.nav-tabs { --bs-nav-link-color: #183d35; }
+a { text-underline-offset: .15em; }
+:focus-visible { outline: 3px solid #876220; outline-offset: 3px; }
+.visually-hidden-focusable { z-index: 1100; }
+[hidden] { display: none !important; }
