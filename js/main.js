@@ -24,7 +24,7 @@ document.querySelectorAll('.request-form').forEach((form) => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const selection = form.querySelector('[name="product"]');
-    const productName = selection.options[selection.selectedIndex].textContent;
+    const productName = selection.options[selection.selectedIndex].textContent.trim();
     statusMessage.textContent = 'Заявка проверена: ' + productName + '. Это учебная демонстрация: данные не отправлены и не сохранены.';
     statusMessage.hidden = false;
     form.reset();
