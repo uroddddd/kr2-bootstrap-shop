@@ -45,4 +45,6 @@
 
 ## Ветки и pull request
 
-Ссылки добавляются после создания реальных PR.
+- №9: `feature/bootstrap-grid-page` — [PR #1](https://github.com/uroddddd/kr2-bootstrap-shop/pull/1)
+- №10: `feature/bootstrap-components` — [PR #2](https://github.com/uroddddd/kr2-bootstrap-shop/pull/2)
+- №11: `fix/kr2-final-check` — [PR #3](https://github.com/uroddddd/kr2-bootstrap-shop/pull/3)
