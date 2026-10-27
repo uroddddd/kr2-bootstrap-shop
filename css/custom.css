@@ -1,19 +1,57 @@
-/* Минимальные правки поверх Bootstrap. Сетка и компоненты — Bootstrap. */
-:root { --shop-ink: #183d35; --shop-surface: #f1eee6; }
-body { color: #23342e; }
-.hero-surface { background-color: var(--shop-surface); }
-.eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
-.btn-primary { --bs-btn-bg: var(--shop-ink); --bs-btn-border-color: var(--shop-ink); --bs-btn-hover-bg: #102a25; --bs-btn-hover-border-color: #102a25; --bs-btn-active-bg: #102a25; --bs-btn-active-border-color: #102a25; }
-.btn-outline-primary { --bs-btn-color: var(--shop-ink); --bs-btn-border-color: var(--shop-ink); --bs-btn-hover-bg: var(--shop-ink); --bs-btn-hover-border-color: var(--shop-ink); --bs-btn-active-bg: var(--shop-ink); --bs-btn-active-border-color: var(--shop-ink); }
-.text-primary { color: var(--shop-ink) !important; }
-.bg-primary, .text-bg-primary { background-color: var(--shop-ink) !important; }
-.navbar-nav .nav-link.active { color: var(--shop-ink); font-weight: 700; text-decoration: underline; text-underline-offset: .4em; }
-.card-img-top { height: 280px; object-fit: contain; background: #f0f1ee; }
-.hero-image { height: 390px; object-fit: contain; background: #e5e4df; }
-.card { --bs-card-border-radius: .8rem; }
-.accordion { --bs-accordion-active-bg: #eef4f0; --bs-accordion-active-color: #183d35; }
-.nav-tabs { --bs-nav-link-color: #183d35; }
-a { text-underline-offset: .15em; }
-:focus-visible { outline: 3px solid #876220; outline-offset: 3px; }
+/* Предметная минималистичная витрина. Сетка и интерактивные компоненты — Bootstrap. */
+:root { --bs-body-color: #1d1d1f; --bs-link-color: #1d1d1f; --bs-link-hover-color: #656565; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { letter-spacing: -.04em; }
+.site-header { background: rgba(255,255,255,.95); border-bottom: 1px solid #ededed; backdrop-filter: blur(16px); }
+.navbar { min-height: 72px; }
+.navbar-brand { font-size: 1.05rem; letter-spacing: -.05em; }
+.brand-dot { margin-left: 2px; }
+.navbar-nav .nav-link { font-size: .8rem; }
+.navbar-nav .nav-link.active { color: #111; font-weight: 600; }
+.navbar .btn { font-size: .8rem; padding: .65rem 1.2rem; }
+.btn { border-radius: 999px; padding: .8rem 1.5rem; font-size: .9rem; }
+.btn-primary { --bs-btn-bg: #161616; --bs-btn-border-color: #161616; --bs-btn-hover-bg: #3c3c3c; --bs-btn-hover-border-color: #3c3c3c; --bs-btn-active-bg: #000; --bs-btn-active-border-color: #000; }
+.btn-outline-primary { --bs-btn-color: #161616; --bs-btn-border-color: #c8c8c8; --bs-btn-hover-bg: #161616; --bs-btn-hover-border-color: #161616; --bs-btn-active-bg: #161616; --bs-btn-active-border-color: #161616; }
+.text-primary { color: #161616 !important; }
+.bg-primary, .text-bg-primary { background-color: #161616 !important; }
+.eyebrow { font-size: .7rem; font-weight: 500; text-transform: uppercase; letter-spacing: .14em; }
+.object-hero { position: relative; background: #f4f4f4; overflow: hidden; }
+.object-photo-link { display: block; overflow: hidden; }
+.object-hero-image { display: block; width: 100%; height: calc(100svh - 73px); min-height: 520px; max-height: 1050px; object-fit: contain;  transform: scale(1.04); }
+.object-bottom { position: absolute; bottom: 24px; left: 4%; right: 4%; display: flex; justify-content: space-between; align-items: center; font-size: .65rem; letter-spacing: .12em; }
+.editorial-link { color: #161616; text-decoration: none; font-size: .85rem; border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
+.editorial-link:hover { color: #777; }
+.object-panel { display: block; position: relative; background: #f4f4f4; color: #222; text-decoration: none; overflow: hidden; }
+.object-panel img { display: block; width: 100%; height: 650px; object-fit: contain;  }
+.object-panel-caption { position: absolute; bottom: 24px; left: 6%; right: 6%; display: flex; justify-content: space-between; font-size: .65rem; letter-spacing: .08em; }
+.editorial-section { padding-top: 5rem; padding-bottom: 2rem; }
+.editorial-section h2 { font-size: clamp(1.8rem, 3vw, 3rem); font-weight: 600; }
+.card { --bs-card-border-radius: 1rem; --bs-card-border-color: #e6e6e6; }
+.card:has(.collection-image) { border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+.collection-image { height: 380px; object-fit: contain; background: #f4f4f4; border-radius: 0;  }
+.card:has(.collection-image) .card-body { padding: 1.6rem 0; }
+.card:has(.collection-image) .card-title { font-size: 1.15rem; letter-spacing: -.025em; }
+.card:has(.collection-image) .card-text { font-size: .88rem; }
+.card:has(.collection-image) .badge { font-size: .6rem; font-weight: 500; letter-spacing: .06em; border-radius: 0; }
+.card:has(.collection-image) .fs-5 { font-size: 1rem !important; font-weight: 500 !important; }
+.card:has(.collection-image) .btn { font-size: .8rem; padding: .65rem 1.1rem; }
+.service-panel { background: #f4f4f4; border-radius: 1rem; }
+.accordion { --bs-accordion-active-bg: #f1f1f1; --bs-accordion-active-color: #111; }
+.nav-tabs { --bs-nav-link-color: #1d1d1f; }
+.table { --bs-table-striped-bg: #f6f6f6; }
+.form-control:focus, .form-select:focus { border-color: #666; box-shadow: 0 0 0 .2rem rgba(0,0,0,.1); }
+footer { font-size: .85rem; }
+footer.bg-dark { background-color: #171717 !important; }
+a { text-underline-offset: .2em; }
+:focus-visible { outline: 3px solid #6a6a6a; outline-offset: 4px; }
 .visually-hidden-focusable { z-index: 1100; }
 [hidden] { display: none !important; }
+.product-gallery { background: #f7f7f5; }
+.product-gallery .carousel-item img { aspect-ratio: 1; object-fit: contain; }
+.product-gallery .carousel-control-prev-icon, .product-gallery .carousel-control-next-icon { filter: invert(1); }
+.product-gallery .carousel-indicators [data-bs-target] { background-color: #222; }
+@media (max-width: 767.98px) {
+  .object-hero-image { height: 78svh; min-height: 440px; max-height: 760px; transform: none; }
+  .object-panel img { height: 540px; }
+  .editorial-section { padding-top: 3rem; padding-bottom: 1rem; }
+}

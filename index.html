@@ -3,33 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Магазин одежды WearShop на Bootstrap: коллекция, преимущества и популярные модели.">
+    <meta name="description" content="Футболки с мем-принтами и узкие джинсы в минималистичной учебной витрине.">
     <title>
       Главная — WearShop Bootstrap
     </title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css?v=meme-edit-3">
   </head>
   <body id="top" class="d-flex flex-column min-vh-100">
     <a class="visually-hidden-focusable position-absolute p-3 bg-white" href="#main">
       Перейти к содержимому
     </a>
-    <div class="container-fluid bg-dark text-white py-2">
-      <div class="container small d-flex flex-wrap justify-content-between gap-2">
-        <span>
-          Небольшой гардероб. Большой выбор сочетаний.
-        </span>
-        <span>
-          Учебный проект · КР №2
-        </span>
-      </div>
-    </div>
-    <header class="border-bottom bg-white">
-      <nav class="navbar navbar-expand-lg py-3" aria-label="Основная навигация">
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg py-2" aria-label="Основная навигация">
         <div class="container">
-          <a class="navbar-brand fw-bold fs-3" href="index.html">
-            WearShop
-            <span class="text-primary">
+          <a class="navbar-brand fw-semibold" href="index.html">
+            WEARSHOP
+            <span class="brand-dot">
               .
             </span>
           </a>
@@ -66,7 +56,7 @@
               </li>
             </ul>
             <a class="btn btn-primary ms-lg-4 mt-3 mt-lg-0" href="catalog.html">
-              Выбрать образ
+              Коллекция ↗
             </a>
           </div>
         </div>
@@ -77,64 +67,65 @@
         <div id="requestStatus" class="alert alert-success mt-4" role="status" tabindex="-1" hidden>
         </div>
       </div>
-      <section class="container-fluid hero-surface py-5">
-        <div class="container py-lg-4">
-          <div class="row g-5 align-items-center">
-            <div class="col-12 col-lg-6">
-              <span class="badge text-bg-light border mb-3">
-                База гардероба / 2026
+      <section class="container-fluid p-0 object-hero" aria-labelledby="heroTitle">
+        <h1 class="visually-hidden" id="heroTitle">
+          Коллекция одежды
+        </h1>
+        <div class="row g-0">
+          <div class="col-12">
+            <a class="object-photo-link" href="product.html" aria-label="Рассмотреть футболку 01">
+              <img class="object-hero-image" src="images/tee-shark.png" alt="Белая футболка с цветным мем-принтом, без модели" width="1100" height="1100" fetchpriority="high">
+            </a>
+          </div>
+        </div>
+        <div class="object-bottom">
+          <span>
+            01 / 03
+          </span>
+          <a class="editorial-link" href="product.html">
+            Подробнее ↗
+          </a>
+        </div>
+      </section>
+      <section class="container-fluid p-0 mt-2" id="selection" aria-labelledby="selectionTitle">
+        <h2 class="visually-hidden" id="selectionTitle">
+          Другие модели одежды
+        </h2>
+        <div class="row g-2 mx-0">
+          <div class="col-12 col-md-6">
+            <a class="object-panel" href="product-sahur.html" aria-label="Рассмотреть футболку 02">
+              <img src="images/tee-sahur.png" alt="Тёмная футболка с мем-принтом без модели" width="1024" height="1024" loading="lazy">
+              <span class="object-panel-caption">
+                02 / 03
+                <span>
+                  Подробнее ↗
+                </span>
               </span>
-              <h1 class="display-4 fw-bold mb-4">
-                Вещи, которые
-                <br>
-                легко сочетать.
-              </h1>
-              <p class="lead text-body-secondary mb-4">
-                Три понятные модели для каждого дня. Выберите посадку, сравните размеры и соберите свой комплект.
-              </p>
-              <div class="d-flex flex-wrap gap-3">
-                <a href="catalog.html" class="btn btn-primary btn-lg">
-                  Смотреть коллекцию ↗
-                </a>
-                <a href="sizes.html" class="btn btn-outline-dark btn-lg">
-                  Подобрать размер
-                </a>
-              </div>
-              <p class="small text-body-secondary mt-4 mb-0">
-                01 / База   02 / Трикотаж   03 / Деним
-              </p>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="card border-0 shadow-sm overflow-hidden">
-                <img class="hero-image w-100" src="images/tshirt.png" alt="Белая футболка с принтом — главный товар коллекции" width="480" height="460">
-                <div class="card-body d-flex flex-wrap justify-content-between align-items-center gap-2">
-                  <div>
-                    <p class="small text-body-secondary mb-1">
-                      В центре коллекции
-                    </p>
-                    <p class="fw-semibold mb-0">
-                      Футболка базовая
-                    </p>
-                  </div>
-                  <span class="badge text-bg-primary">
-                    1000 ₽
-                  </span>
-                </div>
-              </div>
-            </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6">
+            <a class="object-panel" href="product-jeans.html" aria-label="Рассмотреть джинсы skinny">
+              <img src="images/jeans-skinny.png" alt="Суперузкие чёрные джинсы без модели" width="1024" height="1024" loading="lazy">
+              <span class="object-panel-caption">
+                03 / 03
+                <span>
+                  Подробнее ↗
+                </span>
+              </span>
+            </a>
           </div>
         </div>
       </section>
-      <section class="container my-5" aria-labelledby="advantagesTitle">
+      <section class="container editorial-section" aria-labelledby="advantagesTitle">
         <p class="eyebrow text-primary">
-          Продуманный выбор
+          Детали
         </p>
         <h2 id="advantagesTitle" class="mb-4">
-          Меньше сомнений. Больше сочетаний.
+          Простой выбор.
         </h2>
         <div class="row g-4">
           <div class="col-12 col-md-4">
-            <div class="p-4 border rounded-3 h-100 bg-white">
+            <div class="p-0 pe-lg-4 h-100 bg-white">
               <p class="small text-primary fw-semibold">
                 01
               </p>
@@ -147,7 +138,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="p-4 border rounded-3 h-100 bg-white">
+            <div class="p-0 pe-lg-4 h-100 bg-white">
               <p class="small text-primary fw-semibold">
                 02
               </p>
@@ -160,7 +151,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="p-4 border rounded-3 h-100 bg-white">
+            <div class="p-0 pe-lg-4 h-100 bg-white">
               <p class="small text-primary fw-semibold">
                 03
               </p>
@@ -174,14 +165,14 @@
           </div>
         </div>
       </section>
-      <section class="container my-5">
+      <section class="container editorial-section">
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
           <div>
             <p class="eyebrow text-primary mb-1">
               Коллекция
             </p>
             <h2 class="mb-0">
-              Популярные модели
+              Коллекция
             </h2>
           </div>
           <a href="catalog.html" class="btn btn-outline-primary">
@@ -190,34 +181,34 @@
         </div>
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
-            <article class="card h-100 shadow-sm overflow-hidden">
+            <article class="card h-100  overflow-hidden">
               <div class="position-relative bg-body-tertiary">
-                <img src="images/tshirt.png" class="card-img-top" alt="Футболка базовая" width="480" height="460" loading="lazy">
-                <span class="badge text-bg-warning position-absolute top-0 end-0 m-3">
-                  Хит
+                <img src="images/tee-shark.png" class="card-img-top collection-image" alt="Футболка 01" width="480" height="460" loading="lazy">
+                <span class="badge text-bg-dark position-absolute top-0 end-0 m-3">
+                  База
                 </span>
               </div>
               <div class="card-body d-flex flex-column">
                 <p class="small text-body-secondary mb-2">
-                  База · S–XL
+                  Хлопок · Свободный крой
                 </p>
                 <h3 class="card-title h5">
-                  Футболка базовая
+                  Футболка 01
                 </h3>
                 <p class="card-text text-body-secondary">
-                  Хлопковая футболка с принтом. Свободная посадка для повседневных образов.
+                  Белая хлопковая футболка свободного кроя с цветным брейнрот-принтом.
                 </p>
                 <p class="fw-bold fs-5 mt-auto">
-                  1000 ₽
+                  1 490 ₽
                 </p>
                 <div class="d-flex flex-wrap gap-2">
                   <a class="btn btn-outline-primary" href="product.html">
                     Подробнее
                   </a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="tshirt">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="shark">
                     Заявка
                     <span class="visually-hidden">
-                      : Футболка базовая
+                      : Футболка 01
                     </span>
                   </button>
                 </div>
@@ -225,34 +216,34 @@
             </article>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <article class="card h-100 shadow-sm overflow-hidden">
+            <article class="card h-100  overflow-hidden">
               <div class="position-relative bg-body-tertiary">
-                <img src="images/hoodie.svg" class="card-img-top" alt="Толстовка" width="480" height="460" loading="lazy">
-                <span class="badge text-bg-success position-absolute top-0 end-0 m-3">
-                  Новинка
+                <img src="images/tee-sahur.png" class="card-img-top collection-image" alt="Футболка 02" width="480" height="460" loading="lazy">
+                <span class="badge text-bg-dark position-absolute top-0 end-0 m-3">
+                  Футболка 02
                 </span>
               </div>
               <div class="card-body d-flex flex-column">
                 <p class="small text-body-secondary mb-2">
-                  Трикотаж · S–XL
+                  Хлопок · Свободный крой
                 </p>
                 <h3 class="card-title h5">
-                  Толстовка
+                  Футболка 02
                 </h3>
                 <p class="card-text text-body-secondary">
-                  Мягкая толстовка с капюшоном. Второй слой для прохладных дней.
+                  Тёмная хлопковая футболка с мем-принтом и свободной посадкой.
                 </p>
                 <p class="fw-bold fs-5 mt-auto">
-                  1500 ₽
+                  1 690 ₽
                 </p>
                 <div class="d-flex flex-wrap gap-2">
-                  <a class="btn btn-outline-primary" href="product-hoodie.html">
+                  <a class="btn btn-outline-primary" href="product-sahur.html">
                     Подробнее
                   </a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="hoodie">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="sahur">
                     Заявка
                     <span class="visually-hidden">
-                      : Толстовка
+                      : Футболка 02
                     </span>
                   </button>
                 </div>
@@ -260,37 +251,34 @@
             </article>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <article class="card h-100 shadow-sm overflow-hidden">
+            <article class="card h-100  overflow-hidden">
               <div class="position-relative bg-body-tertiary">
-                <img src="images/jeans.svg" class="card-img-top" alt="Джинсы" width="480" height="460" loading="lazy">
-                <span class="badge text-bg-danger position-absolute top-0 end-0 m-3">
-                  −10%
+                <img src="images/jeans-skinny.png" class="card-img-top collection-image" alt="Джинсы skinny" width="480" height="460" loading="lazy">
+                <span class="badge text-bg-dark position-absolute top-0 end-0 m-3">
+                  Skinny
                 </span>
               </div>
               <div class="card-body d-flex flex-column">
                 <p class="small text-body-secondary mb-2">
-                  Деним · S–XL
+                  Деним · Super skinny
                 </p>
                 <h3 class="card-title h5">
-                  Джинсы
+                  Джинсы skinny
                 </h3>
                 <p class="card-text text-body-secondary">
-                  Прямые джинсы из плотного денима. Универсальный синий цвет.
+                  Чёрные джинсы суперузкого кроя. Облегают ноги от бедра до щиколотки.
                 </p>
                 <p class="fw-bold fs-5 mt-auto">
-                  1800 ₽
-                  <del class="small text-body-secondary ms-2">
-                    2000 ₽
-                  </del>
+                  3 990 ₽
                 </p>
                 <div class="d-flex flex-wrap gap-2">
                   <a class="btn btn-outline-primary" href="product-jeans.html">
                     Подробнее
                   </a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="jeans">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="skinny">
                     Заявка
                     <span class="visually-hidden">
-                      : Джинсы
+                      : Джинсы skinny
                     </span>
                   </button>
                 </div>
@@ -299,8 +287,8 @@
           </div>
         </div>
       </section>
-      <section class="container my-5">
-        <div class="p-4 p-lg-5 rounded-3 hero-surface row g-3 align-items-center mx-0">
+      <section class="container editorial-section">
+        <div class="p-4 p-lg-5 service-panel row g-3 align-items-center mx-0">
           <div class="col-12 col-lg-8">
             <h2 class="h3">
               Не уверены в размере?
@@ -357,7 +345,7 @@
               О проекте
             </p>
             <p class="small text-white-50">
-              КР №2 · HTML, Bootstrap 5.3.8, CSS и немного JavaScript. Реальные заказы не принимаются.
+              КР №2 · HTML, Bootstrap 5.3.8, CSS и немного JavaScript. Учебная витрина. Не официальный магазин брендов. Цены условные.
             </p>
             <a class="link-light" href="#top">
               Вернуться наверх ↑
@@ -420,14 +408,14 @@
                     <option value="">
                       Выберите товар или тему
                     </option>
-                    <option value="tshirt">
-                      Футболка базовая
+                    <option value="shark">
+                      Футболка 01
                     </option>
-                    <option value="hoodie">
-                      Толстовка
+                    <option value="sahur">
+                      Футболка 02
                     </option>
-                    <option value="jeans">
-                      Джинсы
+                    <option value="skinny">
+                      Джинсы skinny
                     </option>
                     <option value="consultation">
                       Консультация по выбору
@@ -522,7 +510,7 @@
     </noscript>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
     </script>
-    <script src="js/main.js">
+    <script src="js/main.js?v=meme-edit-3">
     </script>
   </body>
 </html>
