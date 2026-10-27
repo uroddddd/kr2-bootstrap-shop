@@ -2,7 +2,7 @@
 // Наша доработка: выбранный товар, учебная проверка формы и фильтры каталога.
 const modalElement = document.getElementById('orderModal');
 const statusMessage = document.getElementById('requestStatus');
-const allowedProducts = ['tshirt', 'hoodie', 'jeans', 'consultation'];
+const allowedProducts = ['shark', 'sahur', 'skinny', 'consultation'];
 modalElement.addEventListener('show.bs.modal', (event) => {
   const product = event.relatedTarget?.dataset.product;
   const selected = allowedProducts.includes(product) ? product : 'consultation';
